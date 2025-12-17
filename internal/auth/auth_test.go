@@ -13,7 +13,7 @@ func TestGetAPIKey(t *testing.T) {
 	}
 
 	runCases := []testCase{
-		{"Authorization", "ApiKey 95174985719", true},
+		{"Authorization", "ApiKey 95174985719", false},
 		{"Authorization", "  ApiKey 73849173", true},
 		{"Authorization", "ApiKey ApiKey", false},
 		{"Authorization", "  ", true},

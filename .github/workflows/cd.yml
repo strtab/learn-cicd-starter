@@ -5,11 +5,13 @@ on:
     branches: [main]
 
 jobs:
-  deploy:
+  tests:
     name: Deploy
+    runs-on: ubuntu-latest
+
     steps:
       - name: Checkout of code
-        actions: checkout@v4
+        uses: checkout@v4
 
       - name: Set up Golang
         uses: actions/setup-go@v5
